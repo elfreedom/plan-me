@@ -1,33 +1,15 @@
 $(document).ready(function(){
+	
+            $(function() { 
+                $("#loginform").validity(function() {
+                    $("#login")
+                        .require();
+                  
+                    $("#pswd")
+                        .require();
+                });
+                $.validity.setup({ outputMode:"summary" });
 
-    $("#loginform").validate({
-        
-       rules:{ 
-        
-            login:{
-                required: true,
-            },
-            
-            pswd:{
-                required: true,
-            },
-       },
-       
-       messages:{
-        
-            login:{
-                required: "Please, enter Your Login",
-
-            },
-            
-            pswd:{
-                required: "Please, enter Your Password",
-
-            },
-        
-       }
-        
-    });
-
-
-}); //end of ready
+            });
+}); 
+     

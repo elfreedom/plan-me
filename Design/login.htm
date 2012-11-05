@@ -1,62 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Устанавливаем кодировку !-->
+    <!-- Meta!-->
     <meta charset="utf-8">  
-    <!-- Объявление заголовка!-->
     <title>Log in page &middot; Plan me </title>
-    <!--Показ страницы в масштабе 1:1. !-->
+    <!--Scale 1:1. !-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Контент !-->
+	<!--Content !-->
     <meta name="description" content="Login page">
     <meta name="author" content="ETS">
-    <!--Стили !-->
-    <!--Подключаем таблицу стилей !-->
+    <!--Styles !-->
     <link href="css/bootstrap.css" rel="stylesheet"> 
-    <!--переопределяем стили тела и формы!-->
-
+    <link href="css/jquery.validity.css" type="text/css" rel="Stylesheet" >
+    <!--PlanMe Styles-->
+	<link href="css/planme.css" type="text/css" rel="Stylesheet" >
         <!--      	 !-->
     <style>
-		body 
-		{
-        	padding-top: 160px;
-        	padding-bottom: 160px;
-        	background-color:#f5f5f5;
-      	}    
-      	
-		.form-login 
-      	{
-        	margin: 0 auto 10px;
-        	margin-top: 20px;
-      	}    
-    
-    	.loginflds 
-    	{
-            max-width: 400px;
-        	padding: 19px 29px 10px;
-        	margin: 0 auto 10px;
-        	background-color: #fff;
-        	border: 2px solid #e5e5e5;
-         	-webkit-border-radius: 5px;
-           	-moz-border-radius: 5px;
-            border-radius: 5px;
-        	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-           	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-            box-shadow: 0 1px 2px rgba(0,0,0,.05);
- 		}
 
-		.loginlegend 
-		{
-  			display: block;
-  			width: auto;
-  			margin-bottom: 0px;
-  			font-size: 21px;
-  			line-height: 10px;
-  			color: #333333;
-  			border: 0;
-  			border-bottom: 0px solid #e5e5e5;
-		}
     </style>
+
+
+    <!--  javascript
+    ================================================== -->
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/jQuery.validity.js"></script>
+   <script type="text/javascript" src="js/planme.js"></script>
   </head>
   
 <body>
@@ -64,61 +32,38 @@
 <div class="container">
     <fieldset class ="loginflds">
      <legend class ="loginlegend">Plan Me</legend>
-        <form id="loginform" class="form-login"  method="post" action="">   
-        <table width=100%> 
-        <!--**********************************************************************!-->
-        <tr>
-     	   	<td>
-     	  		Login
-    	    </td>
-       		<td>
-      		   <input name="login" type="text" class="input-block-level" placeholder="Login">
-     		</td>
-     	</tr>
-     	<!--**********************************************************************!-->
-     	<tr>
-     		   <td>
-     			  Password
-      		    </td>
-     		   <td>
-     		   <input name="pswd" type="password" class="input-block-level" placeholder="Password">
-      		  </td>
-	    </tr>
-	    <!--**********************************************************************!-->
-        <tr>
-        	<td>
-        	 <label class="checkbox">
-         	 <input type="checkbox" value="remember-me"> Remember me
-       		 </label>
-       		 </td>
-       	    <td align="right">
-          		<button class="btn btn-middle btn-primary" type="submit">Log in</button>
-        	</td>	
-        </tr>
-    	<!--**********************************************************************!-->
-        </table>
-     </form>
+        <form id="loginform" class="form-login"  method="post" action="" style="margin-top:20px">   
+       <!--Login **********************************************************************!-->
+   <div class="controls controls-row">
+   		<label class="span2" for="Email">Login</label>
+    	<div class="controls">
+ 		<input type="text" id="login" placeholder="Enter your login" name="login" >
+    	</div>
+   </div>
+     	<!--Password **********************************************************************!-->
+    <div class="controls controls-row">
+   		 <label class="span2" for="inputPassword">Password</label>
+    <div class="controls">
+   		 <input id="pswd" name="pswd" type="password" id="inputPassword" placeholder="Enter your password"  >
+    </div>
+    </div>
+   	    <!--**********************************************************************!-->
+   <div class="controls controls-row" style="margin-right:20px">
+   <label class="span2 checkbox" > <input type="checkbox"> Remember me </label>
+   <div class="controls" align="right">
+   <button type="submit" class="btn btn-middle btn-primary" >Login	</button>
+   </div> 
+   </div>
+   <p  align="right" style="margin-right:20px"><a href="#">Register</a>/<a href="#">Forgot password</a></p>	
+   
+
+
+    </form>
     	<!--**********************************************************************!-->     
-	<div>
 
-               <p align="right"><a href="#">Register</a>/<a href="#">Forgot password</a></p>
 
-	</div>
     </fieldset>  
     	<!--**********************************************************************!-->	
-
-
     </div> <!-- /container -->
-    <!--  javascript
-    ================================================== -->
-    
-    <script type="text/javascript"  src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.js"></script> 
-    <script type="text/javascript" src="js/planme.js"></script>
-
-    <!-- jav -->
-
-
-
   </body>
 </html>
