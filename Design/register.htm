@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta!-->
+    <meta charset="utf-8">  
+    <title>Registration page &middot; Plan me </title>
+    <!--Scale 1:1. !-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Content !-->
+    <meta name="description" content="Login page">
+    <meta name="author" content="ETS">
+    <!--Styles !-->
+    <link href="css/bootstrap.css" rel="stylesheet"> 
+    <link href="css/jquery.validity.css" type="text/css" rel="Stylesheet" >
+    <!--PlanMe Styles-->
+	<link href="css/planme.css" type="text/css" rel="Stylesheet" >
+        <!--      	 !-->
+    <style>
+
+    </style>
+
+
+    <!--  javascript
+    ================================================== -->
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/jQuery.validity.js"></script>
+   <script type="text/javascript" src="js/planme.js"></script>
+  </head>
+  
+<body>
+
+<div class="container">
+    <fieldset class ="loginflds">
+     <legend class ="loginlegend">New user registration form</legend>
+        <form id="registrationform" class="form-login"  method="post" action="" style="margin-top:20px">   
+       <!--Name **********************************************************************!-->
+   <div class="controls controls-row">
+   		<label class="span2" for="Email">Your name</label>
+    	<div class="controls">
+ 		<input type="text" id="newname" placeholder="Enter your name" name="newname" >
+    	</div>
+   </div>
+          <!--Email **********************************************************************!-->
+   <div class="controls controls-row">
+   		<label class="span2" for="Email">Your email</label>
+    	<div class="controls">
+ 		<input type="text" id="newemail" placeholder="Enter your email" name="newemail" >
+    	</div>
+   </div>
+       <!--New Login **********************************************************************!-->
+   <div class="controls controls-row">
+   		<label class="span2" for="Email">Your login</label>
+    	<div class="controls">
+ 		<input type="text" id="newlogin" placeholder="Enter your login" name="newlogin" >
+    	</div>
+   </div>
+     	<!--New Password **********************************************************************!-->
+    <div class="controls controls-row">
+   		 <label class="span2" for="inputPassword">Your password</label>
+    <div class="controls">
+   		 <input id="newpswd" name="newpswd" type="password"  placeholder="Enter your password"  >
+    </div>
+    </div>
+   	    <!--BTN**********************************************************************!-->
+   <div class="controls controls-row" style="margin-right:20px">
+  
+   <div class="controls" align="right">
+   <button type="submit" class="btn btn-middle btn-primary" >Register</button>
+   </div> 
+   </div>
+   </form>
+    	<!--**********************************************************************!-->     
+
+
+    </fieldset>  
+    	<!--**********************************************************************!-->	
+    </div> <!-- /container -->
+  </body>
+</html>

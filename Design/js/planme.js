@@ -10,6 +10,20 @@ $(document).ready(function(){
                 });
                 $.validity.setup({ outputMode:"summary" });
 
+                $("#registrationform").validity(function() {
+                    $("#newlogin")
+                        .require();
+                   $("#newemail")
+                   	    .match("email")
+                        .require();
+                   	
+                    $("#newname")
+                        .require();
+                  
+                    $("#newpswd")
+                        .require();
+                });
+                $.validity.setup({ outputMode:"summary" });
             });
 }); 
      
