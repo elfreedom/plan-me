@@ -48,7 +48,7 @@ namespace converternew
             //Declaration
             Int64 binValue;
             char[] binArray;
-            string binResult = "";
+            string binResult = string.Empty;
             //The binary number in reverse order
             while (numValue > 0)
             {

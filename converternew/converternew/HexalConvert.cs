@@ -14,15 +14,15 @@ namespace converternew
             const string hexChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             double rank = 1, decNum = 0;
 
-            if (numValue != null)
-            {
-                for (var i = numValue.Length - 1; i >= 0; i--)
-                {
-                    var index = hexChars.IndexOf(numValue[i]);
-                    decNum += rank * index;
-                    rank *= 16;
-                }
-            }
+             if (numValue != null)
+              {
+                  for (int i = 0; i < numValue.Length; i++)
+                  {
+                      var index = hexChars.IndexOf(numValue[i]);
+                      decNum += rank * index;
+                      rank *= 16;
+                  }
+              }
             return decNum;
         }
 
@@ -31,7 +31,7 @@ namespace converternew
             //Declaration
             Int64 binValue;
             char[] binArray;
-            string binResult = "";
+            string binResult = string.Empty;
             var hexchars = new[] { 'A', 'B', 'C', 'D', 'E', 'F' };
             //The binary number in reverse order
             while (numValue > 0)
